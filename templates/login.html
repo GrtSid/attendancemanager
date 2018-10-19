@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyAttendance Tracker</title>
+    <link rel="stylesheet" href="C:\Users\Siddhant Agarwal\Desktop\Development\attendancemanager\static\css\attendance.css">
+
+  </head>
+  <body>
+    <ul>
+      <li style="float:left" class="att"><a href="about.html">My Attendance</a></li>
+      <! {% if user.is_authenticated %}>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="Thursday.html">Thursday</a></li>
+      <li><a href="Friay.html">Friday</a></li>
+      <! {% else %}>
+      <li style="float:right"><a href="signup.html">Sign Up</a></li>
+      <li style="float:right"><a href="login.html">Login</a></li>
+    </ul>
+    <div class="matter">
+      <img src="Attendance.jpg" alt="Attendance Matters" class="center">
+    </div>
+
+    <!-- {% if user.is_authenticated %} -->
+      <div>
+        <ul class="sidenav">
+          <li id="side">
+            <h3>Subject 1</h3>
+            <p>Present:{{ present1.count}}</p>
+            <p>Absent:{{absent1.count}}</p>
+            <p>Percentage:{{percentage1}}</p>
+          </li>
+          <li id="side">
+            <h3>Subject 2</h3>
+            <p>Present:{{ present2.count}}</p>
+            <p>Absent:{{absent2.count}}</p>
+            <p>Percentage:{{percentage2}}</p>
+          </li>
+          <li id="side">
+            <h3>Subject 3</h3>
+            <p>Present:{{ present3.count}}</p>
+            <p>Absent:{{absent3.count}}</p>
+            <p>Percentage:{{percentage3}}</p>
+          </li>
+          <li id="side">
+            <h3>Subject 4</h3>
+            <p>Present:{{ present4.count}}</p>
+            <p>Absent:{{absent4.count}}</p>
+            <p>Percentage:{{percentage4}}</p>
+          </li>
+          <li id="side">
+            <h3>Subject 5</h3>
+            <p>Present:{{ present5.count}}</p>
+            <p>Absent:{{absent5.count}}</p>
+            <p>Percentage:{{percentage5}}</p>
+          </li>
+        </ul>
+
+      </div>
+      <! {%endif%}>
+      <div class="sec">
+        <h2>Please Login</h2>
+        <h3>Enter your username and password</h3>
+        <p>Your Username and password did not match</p>
+        <form class="portal" action="index.html" method="post">
+          <input type="submit" class="button1" value="Login">
+        </form>
+      </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    position: sticky;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+img{
+  height: 270px;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.sidenav {
+    margin: 0;
+    padding:10px;
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#side {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.button1 {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.sec{
+  padding-top: 15%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 5%;
+  margin-right: 45%;
+  margin-left: 30%;
+}
